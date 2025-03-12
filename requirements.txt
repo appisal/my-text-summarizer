@@ -1,0 +1,15 @@
+streamlit
+transformers
+torch
+wordcloud
+matplotlib
+seaborn
+keybert
+gtts
+reportlab
+python-docx
+beautifulsoup4
+requests
+urllib3
+scipy
+sentencepiece
