@@ -11,6 +11,12 @@ import time
 import urllib.parse  
 from reportlab.pdfgen import canvas
 from docx import Document
+import os
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Render dynamically sets PORT
+    st.run(host="0.0.0.0", port=port)
+
 
 # GPU Check
 device = 0 if torch.cuda.is_available() else -1
