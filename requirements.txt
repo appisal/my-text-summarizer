@@ -13,3 +13,5 @@ requests
 urllib3
 scipy
 sentencepiece
+gunicorn
+
