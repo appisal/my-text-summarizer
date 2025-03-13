@@ -8,14 +8,18 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from keybert import KeyBERT
 import time
-import urllib.parse  
+import urllib.parse
 from reportlab.pdfgen import canvas
 from docx import Document
 import os
+import subprocess  # ✅ Import subprocess for correct execution
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))  # Render dynamically sets PORT
-    st.run(host="0.0.0.0", port=port)
+
+    # ✅ Replace st.run() with subprocess
+    subprocess.run(["streamlit", "run", "app.py", "--server.port", str(port), "--server.address", "0.0.0.0"])
+
 
 
 # GPU Check
